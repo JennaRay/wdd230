@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <img src="images/me.png" alt="Jenna Ray">
+        <img id="profile" src="images/me-optomized.jpg" alt="Jenna Ray">
         <h1>JENNA RAY</h1>
     </header>
     <nav>
@@ -25,14 +25,13 @@
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card">
+        <section class="card" id="activities">
             <h3>Learning Activities</h3>
             <ul>
                 <li></li>
-                <a></a>
             </ul>
         </section>
-        <section class="card">
+        <section class="card" id="info">
             <h3>Information</h3>
             <p>Weather</p>
             <p>Visits</p>
@@ -40,8 +39,9 @@
         </section>
     </main>
     <footer>
-        <p>&copy; (current year) Jenna Ray  United States</p>
+        <p>&copy; <span id="year">year.</span> Jenna Ray.  United States</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
