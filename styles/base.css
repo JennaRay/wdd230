@@ -41,7 +41,7 @@ main {
     justify-self: center;
 }
 nav {
-    background-color: rgb(84, 148, 148);
+    background-color: #4e7372;
     padding: 2rem 0px;
     margin: 0px;
     grid-column: 1/2;
@@ -64,7 +64,7 @@ nav a:hover {
 }
 h2 {
     font-weight: lighter;
-    color: #93caca;
+    color: #b7e0e0;
     grid-column: 1/2;
     justify-self: center;
     align-self: center;
@@ -76,7 +76,7 @@ h3 {
     background-color: #4e7372;
     padding: 1px 2px 10px 10px;
     border-top: 10px solid #233635;
-    color: #233635;
+    color: #e6f5f4;
     margin: 1rem;
     grid-column: 1/2;
     width: 80%;
