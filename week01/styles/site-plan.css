@@ -1,0 +1,132 @@
+
+:root {
+    --display: 'Bebas Neue', sans-serif;
+    --body: 'News Cycle', sans-serif;
+    --sub: 'Dawning of a New Day', cursive;
+}
+
+/* Neutral: */
+
+/* :root { 
+--text: #233239;
+--alt-bg: #7a6c5d;
+--accent2: #c17c74;
+--bg: #bcac9b;
+--accent1: #ddc9b4; 
+} */
+
+/* Adventurous: */
+
+/* :root {
+--text: #2d3047;
+--accent2: #c04abc;
+--accent1: #e0a458;
+--alt-bg: #419d78;
+--bg: #ffdbb5;
+} */
+
+/* Earthy */
+
+/* :root {
+--text: #4c2e05;
+--alt-bg: #7a8450;
+--accent1: #bcac9b;
+--bg: #aebd93;
+--accent2: #bee7b8;
+} */
+:root {
+    --text: #f7dba7;
+    --alt-bg: #f1c386  ;
+    --accent1: #041F1E;
+    --bg: #1E2D2F;
+    --accent2: #944721;
+    }
+
+body {
+    background-color: var(--bg);
+    background-image: url("../images/mountain.jpg");
+
+    color: var(--text);
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    background-color: var(--alt-bg);
+    color: var(--accent2);
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding: 1rem;
+}
+nav {
+    background-color: var(--accent1);
+    font-family: var(--display);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a:hover {
+    color: var(--accent1);
+    background-color: var(--accent2);
+}
+nav a {
+    text-decoration: none;
+    color: var(--text);
+}
+p {
+    font-family: var(--body);
+}
+h1 {
+    font-family: var(--display);
+    font-size: 300%;
+    margin: 0px;
+}
+h2, h3, h4 {
+    font-family: var(--body);
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    color: var(--accent1);
+}
+h3 {
+    font-family: var(--sub);
+    font-weight:bold;
+    font-size: 250%;
+    margin-top: -20px;
+    color: var(--accent1);
+}
+main {
+    width: 100%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: .5fr 2fr .15fr 2fr .5fr;
+    grid-template-rows: 1fr .5fr 4fr 4fr;
+}
+section {
+    background-color: var(--alt-bg);
+    border-top: .5rem solid var(--accent2);
+    margin: 0px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: var(--accent1);
+}
+#name {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 0px;
+}
+#purpose {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    margin-top: 0px;
+}
+#scenarios {
+    grid-column: 2/5;
+    grid-row: 4/5;
+}
+main h2 {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    padding-top: 1rem;
+}
