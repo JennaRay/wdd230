@@ -82,6 +82,9 @@ h3 {
     width: 80%;
     list-style-type: none;
 }
+#activities a {
+    color: #c2e781;
+}
 footer {
     grid-column: 1/2;
     justify-self: left;
