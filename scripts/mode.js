@@ -28,6 +28,8 @@ modeButton.addEventListener("click", function() {
         card1.style.color = "#e6f5f4";
         card2.style.color = "#e6f5f4";
         modeButton.style.border = "1px solid #b7e0e0";
+        card1.style.border = "0px";
+        card2.style.border = "0px";
         card1.style.borderTop = "10px solid #4e7372";
         card2.style.borderTop = "10px solid #4e7372";
         main.style.background = "#394e4b";
