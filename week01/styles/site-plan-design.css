@@ -1,27 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
 main {
     width: 100%;
-    display: grid;
+    display: flex;
     justify-self: center;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 4fr 4fr;
-    margin: 0px 2rem;
+    flex-direction: column;
+    margin: 0px;
 }
 section{
     width: 100%;
+    height: fit-content;
 }
 #colors {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: flex;
+    background-color: blanchedalmond;
 }
-#type {
-    grid-column: 2/3;
-    grid-row: 3/4;
+#table {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+}
+#colors table {
+    margin-left: -100px;
+}
+
+#fonts {
+    text-align: center;
 }
 h2 {
     grid-column: 2/3;
     grid-row: 1/2;
 }
+th {
+    font-family: 'Dawning of a New Day', cursive;
+}
 #box1 {
-    
+    background-color: #f1c386;
+}
+#box2 {
+    background-color: #1E2D2F;
+}
+#box3 {
+    background-color: #944721;
+}
+#box4 {
+    background-color: #f7dba7;
+}
+#box5 {
+    background-color: #041F1E;
 }

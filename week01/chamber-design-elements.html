@@ -19,31 +19,48 @@
         <h3>Site Plan</h3>
     </header>
     <nav>
-        <a href="../index.html">Home</a>
-        <a href="chamber-site-plan.html">Main Info</a>
-        <a href="chamber-design-elements.html">Design Elements</a>
-        <a href="chamber-wireframe.html">Wireframe</a>
+        <button id="menu" aria-label="menu"></button>
+        <ul class="navigation">
+            <li><a href="../index.html" title="home">Home</a></li>
+            <li><a href="chamber-site-plan.html" title="main info">Main Info</a></li>
+            <li><a href="chamber-design-elements.html" title="design" class="active">Design Elements</a></li>
+            <li><a href="chamber-wireframe.html" title="wireframe">Wireframe</a></li>
+        </ul>
     </nav>
     <main>
         <h2>Design Elements</h2>
         <section id="colors">
             <h4>Color Schema</h4>
-            <div id="pallette">
-                <div id="box1"></div>
-                <div id="box2"></div>
-                <div id="box3"></div>
-                <div id="box4"></div>
-                <div id="box5"></div>
+            <div id="table">
+                <table id="pallette">
+                    <tr>
+                        <th>Primary</th>
+                        <th>Secondary</th>
+                        <th>Accent 1</th>
+                        <th>Accent 2</th>
+                        <th>Accent 3</th>
+                    </tr>
+                    <tr>
+                        <td id="box1">#f1c386</td>
+                        <td id="box2">#1E2D2F</td>
+                        <td id="box3">#944721</td>
+                        <td id="box4">#f7dba7</td>
+                        <td id="box5">#041F1E</td>
+                    </tr>
+                </table>
             </div>
             <p></p>
         </section>
         <section id="type">
             <h4>Typography</h4>
+            <div id="fonts">
             <h1>Main Header</h1>
             <h2>Smaller Headings</h2>
             <p>Body</p>
+            </div>
             <p></p>
         </section>
     </main>
+    <script src="scripts/site-plan.js"></script>
 </body>
 </html>

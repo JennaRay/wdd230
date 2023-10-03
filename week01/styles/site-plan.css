@@ -49,6 +49,9 @@ body {
     color: var(--text);
     padding: 0px;
     margin: 0px;
+    align-items: center;
+    height: fit-content;
+    
 }
 header {
     background-color: var(--alt-bg);
@@ -56,9 +59,9 @@ header {
     text-align: center;
     width: 100%;
     margin: 0px;
-    padding: 1rem;
+    padding: 0px;
 }
-nav {
+/* nav {
     background-color: var(--accent1);
     font-family: var(--display);
     width: 100%;
@@ -73,13 +76,76 @@ nav a:hover {
 nav a {
     text-decoration: none;
     color: var(--text);
+} */
+#menu {
+    display: block;
+    background-color: var(--accent2);
+    color:var(--alt-bg);
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 0px;
+    padding: .25rem;
+}
+#menu::before {
+    content: "☰";
+}
+#menu.open::before {
+    content: "⇈";
+    background-color: var(--accent1);
+    color: var(--accent2);
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--accent1);
+    color: var(--text);
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 0px;
+}
+.navigation li {
+    display: none;
+}
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    border: 0px;
+}
+.navigation li a:hover {
+    background-color: var(--accent2);
+    color: var(--accent1);
+    font-weight: 700;
+}
+.open li {
+    display:block;
+    width: 100%
+}
+.open li a {
+    display: block;
+}
+.navigation .active {
+    background-color: var(--alt-bg);
+    color: var(--accent1);
+}
+h2 {
+    font-weight: lighter;
+    color: #b7e0e0;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
 }
 p {
     font-family: var(--body);
 }
 h1 {
     font-family: var(--display);
-    font-size: 300%;
+    font-size: 250%;
     margin: 0px;
 }
 h2, h3, h4, h5 {
@@ -100,36 +166,108 @@ h5 {
     color: #576163;
 }
 main {
-    width: 100%;
+    max-width: 90%;
     justify-self: center;
-    display: grid;
-    grid-template-columns: .5fr 2fr .15fr 2fr .5fr;
-    grid-template-rows: 1fr .5fr 4fr 4fr;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+#wireframebody {
+    display: flex;
+    flex-direction: column;
+}
+#wireframe {
+    max-width: 90%;
 }
 section {
     background-color: var(--alt-bg);
     border-top: .5rem solid var(--accent2);
-    margin: 0px;
-    margin-bottom: 1rem;
-    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 0px;
+    padding: 1px 2px 10px 10px;
     color: var(--accent1);
+    height: fit-content;
 }
 #name {
-    grid-column: 2/3;
-    grid-row: 3/4;
     margin-top: 0px;
 }
 #purpose {
-    grid-column: 4/5;
-    grid-row: 3/4;
     margin-top: 0px;
 }
-#scenarios {
-    grid-column: 2/5;
-    grid-row: 4/5;
-}
 main h2 {
-    grid-column: 2/5;
-    grid-row: 1/2;
     padding-top: 1rem;
 }
+
+@media screen and (min-width: 500px) {
+
+    #menu {
+        display: none;
+    }
+    .navigation li a {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+        padding-right: 0px;
+    }
+    .navigation {
+        position: absolute;
+        top: auto;
+        padding: 0px;
+        margin: 0px;
+        grid-column: 1/3;
+        width: 100%;
+        flex-direction: row;
+    }
+    
+    .navigation ul {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+        margin: 0px;
+    }
+    .navigation li {
+        display: block;
+        padding: 0 1rem;
+        width: 100%;
+        margin: 0px;
+        padding-left: 0;
+    }
+    main {
+        width: 100%;
+        justify-self: center;
+        display: grid;
+        grid-template-columns: .5fr 2fr .15fr 2fr .5fr;
+        grid-template-rows: 1fr 2fr 2fr;
+    }
+    section {
+        background-color: var(--alt-bg);
+        border-top: .5rem solid var(--accent2);
+        margin: 0px;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        color: var(--accent1);
+    }
+    #name {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-top: 0px;
+    }
+    #purpose {
+        grid-column: 4/5;
+        grid-row: 2/3;
+        margin-top: 0px;
+    }
+    #scenarios {
+        grid-column: 2/5;
+        grid-row: 3/4;
+    }
+    main h2 {
+        grid-column: 2/5;
+        grid-row: 1/2;
+        padding-top: 3rem;
+        font-size: 250%;
+    }}

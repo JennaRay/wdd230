@@ -12,16 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="wireframebody">
     <header>
         <h1>Chamber of Commerce</h1>
         <h3>Site Plan</h3>
     </header>
     <nav>
-        <a href="../index.html">Home</a>
-        <a href="chamber-site-plan.html">Main Info</a>
-        <a href="chamber-design-elements.html">Design Elements</a>
-        <a href="chamber-wireframe.html">Wireframe</a>
+        <button id="menu" aria-label="menu"></button>
+        <ul class="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="chamber-site-plan.html">Main Info</a></li>
+            <li><a href="chamber-design-elements.html">Design Elements</a></li>
+            <li><a href="chamber-wireframe.html" class="active">Wireframe</a></li>
+        </ul>
     </nav>
+    <img src="images/wireframe.png" id="wireframe">
+    <script src="scripts/site-plan.js"></script>
 </body>
 </html>
