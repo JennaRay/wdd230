@@ -1,0 +1,69 @@
+:root {
+    --text: #f7dba7;
+    --alt-bg: #f1c386  ;
+    --accent1: #041F1E;
+    --bg: #1E2D2F;
+    --accent2: #944721;
+
+    --display: 'Bebas Neue', sans-serif;
+    --body: 'News Cycle', sans-serif;
+    --sub: 'Dawning of a New Day', cursive;
+    }
+
+    /* responsive menu stuff */ 
+    #menu {
+        display: block;
+        background-color: var(--accent2);
+        color:var(--alt-bg);
+        position: fixed;
+        top: 0;
+        right: 0;
+        border: 0px;
+        padding: .25rem;
+    }
+    #menu::before {
+        content: "☰";
+    }
+    #menu.open::before {
+        content: "⇈";
+        background-color: var(--accent1);
+        color: var(--accent2);
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: var(--accent1);
+        color: var(--text);
+        position: fixed;
+        top: 0;
+        right: 0;
+        border: 0px;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation li a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: var(--text);
+        border: 0px;
+    }
+    .navigation li a:hover {
+        background-color: var(--accent2);
+        color: var(--accent1);
+        font-weight: 700;
+    }
+    .open li {
+        display:block;
+        width: 100%
+    }
+    .open li a {
+        display: block;
+    }
+    .navigation .active {
+        background-color: var(--alt-bg);
+        color: var(--accent1);
+    }
