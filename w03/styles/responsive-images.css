@@ -1,0 +1,65 @@
+body {
+    background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-19670.jpg&fm=jpg);
+    background-repeat: inherit;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    color: white;
+    background-color: lightblue;
+    margin: 0px;
+    width: 100%;
+    height: fit-content;
+    padding: 2rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+main {
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+main img {
+    width: 100%;
+    height: auto;
+}
+footer {
+    background-color: lightblue;
+    color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    margin: 0px;
+}
+header a {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(170, 208, 243);
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    border-radius: 100%;
+    padding: 1rem;
+    border-bottom: 5px solid rgb(40, 61, 138);
+    border-left: 5px solid rgb(78, 83, 159);
+    font-weight: bolder;
+    box-shadow: -10px 25px 15px rgba(9, 10, 18, 0.5);
+}
+header a:hover {
+    margin-top: 2rem;
+    margin-bottom: -.5rem;
+    box-shadow: -1px 2px 5px rgb(22, 162, 201);
+    background-color:rgb(47, 241, 255);
+    border-bottom-color: rgb(225, 246, 255);
+    border-left-color: rgb(227, 252, 255);
+    color: rgb(235, 255, 227);
+    stroke: white;
+
+}
