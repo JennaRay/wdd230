@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Activity</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1>Art Gallary</h1>
+        <a href="/index.html" title="back"><<</a>
+    </header>
+    <main>
+        <picture>
+            <img src="images/img1.jpg" loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture><img src="images/img2.jpg" loading="lazy" width="400px" height="600px"></picture>
+        <picture><img src="images/img4.jpg" loading="lazy" width="400px" height="600px"></picture>
+        <picture><img src="images/img5.jpg" loading="lazy" width="400px" height="600px"></picture>
+        <picture><img src="images/img6.jpg" loading="lazy" width="400px" height="600px"></picture>
+        <picture><img src="images/img8.jpg" loading="lazy" width="400px" height="600px"></picture>
+    </main>
+    <footer>
+        <p>Digital Media | Jenna Ray</p>
+        <p>Last modified: <span id="date">year</span></p>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>
