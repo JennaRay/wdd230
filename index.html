@@ -22,7 +22,7 @@
 <body>
     <header>
         <button id="mode" aria-label="color mode">dark</button>
-        <img id="profile" src="images/me-optomized.jpg" alt="Jenna Ray">
+        <img id="profile" src="images/me-optomized.webp" alt="Jenna Ray">
         <h1>JENNA RAY</h1>
     </header>
     <nav>
@@ -35,22 +35,36 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 960px)" srcset="images/hero-small.webp" width="400" height="600">
+                <img src="images/hero-large.webp" alt="LDS temple" width="960" height="480">
+            </picture>
+            <div id="hero-label">
+                <p>Payson Utah Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card" id="activities">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>Week 01 || <a href="week01/holygrail.html">HolyGrail</a> | <a href="week01/media-query.html">Media Query</a> | <a href="week01/chamber-site-plan.html">Chamber Site Plan</a></li>
-                <li>Week 02 || <a href="week02/design.html">Design Activity</a> | <a href="https://codepen.io/JennaRay/pen/bGOLrOY">Hamburger Menu Codepen</a> | <a href="week02/bom.html">DOM Manipulation</a></li>
-                <li>Week 03 || <a href="w03/images/landscape-small.webp">WebP</a> | <a href="w03/lazyload.html">Lazy Loading image gallery</a> | <a href="w03/responsive-images.html">Responsive Images</a> || <a href="w03/bom.html">Local Storage</a></li>
-            </ul>
-        </section>
-        <section class="card" id="info">
-            <h3>Information</h3>
-            <p>Weather</p>
-            <p>Visits</p>
-            <p>etc.</p>
-        </section>
+        <div id="cards">
+            <section class="card" id="activities">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li>Week 01 || <a href="week01/holygrail.html">HolyGrail</a> | <a href="week01/media-query.html">Media Query</a> | <a href="week01/chamber-site-plan.html">Chamber Site Plan</a></li>
+                    <li>Week 02 || <a href="week02/design.html">Design Activity</a> | <a href="https://codepen.io/JennaRay/pen/bGOLrOY">Hamburger Menu Codepen</a> | <a href="week02/bom.html">DOM Manipulation</a></li>
+                    <li>Week 03 || <a href="w03/images/landscape-small.webp">WebP</a> | <a href="w03/lazyload.html">Lazy Loading image gallery</a> | <a href="w03/responsive-images.html">Responsive Images</a> || <a href="w03/bom.html">Local Storage</a></li>
+                </ul>
+            </section>
+            <section class="card" id="info">
+                <h3>Information</h3>
+                <p>Weather</p>
+                <p><span class="label">Number of Visits:</span><span class="visits"></span></p>
+                <p>etc.</p>
+            </section>
+        </div>
     </main>
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89446.38525119718!2d-123.01809431630413!3d45.52618999691526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495055f56bce579%3A0x7d29ff866a33ed86!2sHillsboro%2C%20OR!5e0!3m2!1sen!2sus!4v1696966896648!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <footer>
         <p>&copy; <span id="year">year.</span> Jenna Ray.  United States</p>
         <p id="lastModified"></p>
@@ -58,5 +72,6 @@
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/mode.js"></script>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/localStorage.js"></script>
 </body>
 </html>
