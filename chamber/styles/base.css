@@ -45,6 +45,35 @@
         display: flex;
         flex-direction: column;
     }
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    #sidebar {
+        margin-top: 2.25rem;
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--accent2);
+    }
+    #images {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+    }
+    .side {
+        width: 90%;
+        height: fit-content;
+        background-color: var(--text);
+        color: var(--accent1);
+        border: 2px solid var(--accent2);
+        margin-top: 1rem;
+        padding-left: 1rem;
+    }
+    #calendar ul {
+        display: inline-flex;
+        flex-direction: row;
+    }
     footer {
         background-color: var(--accent2);
         margin: 0px;
