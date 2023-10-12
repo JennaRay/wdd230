@@ -237,6 +237,10 @@
     .images picture {
         padding: 2rem;
     }
+    .caption {
+        font-size: x-small;
+        font-family: monospace;
+    }
     img {
         background: black;
         animation: fade 5s;
@@ -250,6 +254,17 @@
         100% {
             opacity: 1;
         }
+    }
+    .visits-box {
+        height: fit-content;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        color: var(--text);
+        background-color: #6d1001;
+        border-top-right-radius: 10%;
+        border-top-left-radius: 10%;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
     }
     iframe {
         width: 75%;

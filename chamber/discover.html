@@ -122,6 +122,7 @@
                 <p>Cow Population:<br><span id="cows">0,000</span></p>
                 <p>Stray Cats Spayed and Neutered:<br><span id="cats">500</span></p>
             </section>
+            <section class="visits-box"><span class="visits"></span></section>
             <section id="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.85268579177!2d-111.82938264833318!3d43.83010496927257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1697092331034!5m2!1sen!2sus" width="200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
@@ -129,26 +130,32 @@
         <div class="images">
             <h2>Explore Rexburg!</h2>
             <picture>
+                <p class="caption">The Rexburg Temple</p>
                 <source media="(max-width: 960px)" srcset="images/temple-small.webp" >
                 <img src="images/temple-large.webp" alt="The rexburg temple in the snow at sunset" loading="lazy" width="480" height="350">
             </picture>
             <picture>
+                <p class="caption">The St. Anthony Sand dunes</p>
                 <source media="(max-width: 960px)" srcset="images/dunes-small.webp" >
                 <img src="images/dunes-large.webp" alt="an adult riding a fourwheeler on a sanddune" loading="lazy" width="480" height="350">            
             </picture>
             <picture>
+                <p class="caption">Brigham Young University - Idaho</p>
                 <source media="(max-width: 960px)" srcset="images/byui-small.webp">
                 <img src="images/byui-large.webp" alt="the byu-idaho taylor building in the fall" loading="lazy" width="480" height="350">            
             </picture>
             <picture>
+                <p class="caption">The Rexburg Rapids Waterpark</p>
                 <source media="(max-width: 960px)" srcset="images/rapids-small.webp">
                 <img src="images/rapids-large.webp" alt="a waterslide from rexburg rapids" loading="lazy" width="480" height="350">            
             </picture>
             <picture>
+                <p class="caption">The annual Ice Palace</p>
                 <source media="(max-width: 960px)" srcset="images/icepalace-small.webp">
                 <img src="images/icepalace-large.webp" alt="ice palace sculpture lit up with colorful lights" loading="lazy" width="480" height="350">            
             </picture>
             <picture>
+                <p class="caption">Yellowstone's Bearworld</p>
                 <source media="(max-width: 960px)" srcset="images/bearworld-small.webp">
                 <img src="images/bearworld-large.webp" alt="The entrance to yellowstone's bearworld" loading="lazy" width="480" height="350">            
             </picture>
@@ -162,5 +169,6 @@
     <script src="scripts/getDate.js"></script>
     <!-- not working yet vvv -->
     <script src="scripts/calendar.js"></script>
+    <script src="scripts/localStorage.js"></script>
 </body>
 </html>
