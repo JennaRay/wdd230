@@ -1,10 +1,10 @@
 const date = new Date();
 const month = date.getMonth();
 const year = date.getFullYear();
-const days = document.querySelector('.days');
 let today = date.getDay();
-document.getElementById("cal-month").innerHTML = month.toLocaleString('en-us', {month: 'long'});
+document.getElementById("cal-month").innerHTML = date.toLocaleString('default', { month:'short' });
 document.getElementById("cal-year").innerHTML = year;
+makeFirstRow(daysInMonth(), computeFirstDay());
 makeCalendar(daysInMonth(), computeFirstDay());
 
 function daysInMonth(m = month, y = year){
@@ -67,45 +67,63 @@ function checkLeapYear(y = year){
 }
 
 function makeCalendar(numDays, dow){
-    let numRows = Math.ceil((numDays - (6 - dow))/7);
-    //make first row
-    makeFirstRow(numDays, dow);
     //make the rest of the rows
-    let start = 6 - dom +1;
-    for (let i = 1; i <= numRows; i++){
-        let tr = document.createElement('tr');
-        for (i = start; i <= start + 6; i++){
+    let start = 6 - dow +1;
+    let rowNum = 2;
+    for (rowNum; rowNum != 7; rowNum++){
+
+        for (let dom = start.valueOf; dom <= start.valueOf() + 6; dom++){
+            let rowId;
+            switch (rowNum){
+                case 2:
+                    rowId = "row2";
+                    break;
+                case 3:
+                    rowId = "row3";
+                    break;
+                case 4:
+                    rowId = "row4";
+                    break;
+                case 5:
+                    rowId = "row5";
+                    break;
+                case 6:
+                    rowId = "row6";
+                    break;
+            }
+
             let td = document.createElement('td');
             if (dom == today){
                 td.className = "active";
             }
-            if (i > numDays)
+            if (dom > numDays)
             {
-                td.innerHTML = "";
-            }
+                td.innerText = "";}
             else {
-            td.innerHTML = i.valueOf();
-            tr.appendChild(td);}
+            td.innerHTML = dom.valueOf();
+            document.getElementById(rowId).appendChild(td);
+            }
+            start = dom;
         }
-        days.appendChild(tr);
     }
 }
 
 function makeFirstRow(numDays, dow){
-    let fr = document.createElement('tr');
-    for (let i = 1; i <= dow; i++){
-        let td = document.createElement('td');
-        td.innerHTML = "";
-        fr.appendChild(td);
+    
+    for (let i = 1; i < dow; i++){
+        let cell = document.createElement('td');
+        cell.innerText = "/";
+        document.getElementById("row2").appendChild(cell);
     }
-    for (let dom = 1; dom <= 6 - dow; dom++){
-        let td = document.createElement('td');
+    for (let dom = 1; dom <= 8 - dow; dom++){
+        let dayCell = document.createElement('td');
         if (dom == today){
-            td.className = "active";
+            dayCell.className = "active";
         }
-        td.innerHTML = dom.valueOf();
-        fr.appendChild(td);
+        dayCell.innerText = dom.valueOf();
+        document.getElementById('row2').appendChild(dayCell);
+        
     }
-    days.appendChild(fr);
+    
 }
 

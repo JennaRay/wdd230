@@ -28,14 +28,14 @@
         <button id="menu" aria-label="menu"></button>
         <ul class="navigation">
             <li><a href="/index.html" title="home" class="active">Home</a></li>
-            <li><a href="#" title="discover">Discover</a></li>
+            <li><a href="/chamber/discover.html" title="discover">Discover</a></li>
             <li><a href="#" title="directory">Directory</a></li>
             <li><a href="#" title="join">Join</a></li>
         </ul>
     </nav>
     <main class="discover">
         <div id="sidebar">
-            <section id="calander" class="side">
+            <section id="calendar" class="side">
                 <div class="month">
                     <ul>
                         <li class="prev">&#10094;</li>
@@ -44,37 +44,123 @@
                     </ul>
                 </div>
                 <table>
-                    <thead class="weekdays">
-                        <tr>
-                            <th>Su</th>
-                            <th>Mo</th>
-                            <th>Tu</th>
-                            <th>We</th>
-                            <th>Th</th>
-                            <th>Fr</th>
-                            <th>Sa</th>
-                        </tr>
-                    </thead>
-                    <tbody class="days">
-                    </tbody>
+                    <tr class="weekdays">
+                        <th> Su </th>
+                        <th> Mo </th>
+                        <th> Tu </th>
+                        <th> We </th>
+                        <th> Th </th>
+                        <th> Fr </th>
+                        <th> Sa </th>
+                    </tr>
+                    <tr id="row2" class="days">
+                    
+                    </tr>
+                    <tr id="row3" class="days">
+                        <td>//</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="row4" class="days">
+                        <td>//</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="row5" class="days">
+                        <td>//</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="row6" class="days">
+                        <td>//</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </table>
             </section>
             <section id="events-overview" class="side">
-
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li>
+                        <a href="#">First Upcoming Event!</a>
+                        <p>blurb about the event
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">Second Upcoming Event!</a>
+                        <p>blurb about the event
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">Third Upcoming Event!</a>
+                        <p>blurb about the event
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                    </li>
+                </ul>
             </section>
             <section id="statistics" class="side">
-
+                <p>Population: <br><span id="population">0,000,000</span></p>
+                <p>Cow Population:<br><span id="cows">0,000</span></p>
+                <p>Stray Cats Spayed and Neutered:<br><span id="cats">500</span></p>
+            </section>
+            <section id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.85268579177!2d-111.82938264833318!3d43.83010496927257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1697092331034!5m2!1sen!2sus" width="200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </div>
         <div class="images">
+            <h2>Explore Rexburg!</h2>
+            <picture>
+                <source media="(max-width: 960px)" srcset="images/temple-small.webp" >
+                <img src="images/temple-large.webp" alt="The rexburg temple in the snow at sunset" loading="lazy" width="480" height="350">
+            </picture>
+            <picture>
+                <source media="(max-width: 960px)" srcset="images/dunes-small.webp" >
+                <img src="images/dunes-large.webp" alt="an adult riding a fourwheeler on a sanddune" loading="lazy" width="480" height="350">            
+            </picture>
+            <picture>
+                <source media="(max-width: 960px)" srcset="images/byui-small.webp">
+                <img src="images/byui-large.webp" alt="the byu-idaho taylor building in the fall" loading="lazy" width="480" height="350">            
+            </picture>
+            <picture>
+                <source media="(max-width: 960px)" srcset="images/rapids-small.webp">
+                <img src="images/rapids-large.webp" alt="a waterslide from rexburg rapids" loading="lazy" width="480" height="350">            
+            </picture>
+            <picture>
+                <source media="(max-width: 960px)" srcset="images/icepalace-small.webp">
+                <img src="images/icepalace-large.webp" alt="ice palace sculpture lit up with colorful lights" loading="lazy" width="480" height="350">            
+            </picture>
+            <picture>
+                <source media="(max-width: 960px)" srcset="images/bearworld-small.webp">
+                <img src="images/bearworld-large.webp" alt="The entrance to yellowstone's bearworld" loading="lazy" width="480" height="350">            
+            </picture>
         </div>
     </main>
-    <footer>
+    <footer id="discover-footer">
         <p>&copy;  Jenna Ray. |  Project for WDD230  |  Fall 2023</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/getDate.js"></script>
+    <!-- not working yet vvv -->
     <script src="scripts/calendar.js"></script>
 </body>
 </html>
