@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenna Ray - WDD 230 - Form</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal for Jenna Ray - Fall 2023">
+    <meta name="author" content="Jenna Ray">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Jenna Ray - Form">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.vox-cdn.com/thumbor/R3yl0glRIUezVKpZuW5XO5rAlHI=/0x0:6000x3376/1200x900/filters:focal(2520x1208:3480x2168)/cdn.vox-cdn.com/uploads/chorus_image/image/70709208/shutterstock_1599025690.0.jpg">
+    <meta property="og:url" content="https://jennaray.github.io/wdd230/">
+
+</head>
+<body>
+    <header>
+        <button id="mode" aria-label="color mode">dark</button>
+        <h1>JENNA RAY</h1>
+    </header>
+    <nav>
+        <button id="menu" aria-label="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" title="home" class="active">Home</a></li>
+            <li><a href="chamber/index.html" title="chamber">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html" title="site plan">Site Plan</a></li>
+            <li><a href="form.html" title="form">Form</a></li>
+        </ul>
+    </nav>
+    <main id="form">
+        <div id="formMessage"></div>
+        <form method="get" action="record.html">
+            <label>Username <input type="text" id="uname" name="username" required placeholder="username" autocomplete="username"></label>
+            <label>Password <input type="password" id="pwd" name="password" pattern=" .{8,}" title="eight or more characters" required placeholder="password" autocomplete="current-password"></label>
+            <label>Confirm Password <input type="password" id="confirmpassword" name="confirm" required placeholder="********" autocomplete="current-password"></label>
+            <label>Email <input type="email" id="email" name="email" autocomplete="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" placeholder="someonecool@byui.edu"></label>
+            <div id="rangeValue">1</div>
+            <label>Page Rating <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangeValues">
+            <datalist id="rangeValues">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist></label>
+            <input type="submit" value="Rate Site" id="submit">
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="year">year.</span> Jenna Ray.  United States</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/mode.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
