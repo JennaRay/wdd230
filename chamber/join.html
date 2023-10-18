@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rexburg Chamber of Commerce</title>
+    <meta name="description" content="Home page for the Rexburg Chamber of Commerce website, project for wdd230, fall 23">
+    <meta name="author" content="Jenna Ray">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Rexburg Chamber of Commerce - Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://rexburgchamber.org/wp-content/uploads/2022/03/Rexburg-Temple-air-shot-scaled.jpg">
+    <meta property="og:url" content="https://jennaray.github.io/wdd230/chamber">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Rexburg</h1>
+        <h2>Chamber of Commerce</h2>
+    </header>
+    <nav>
+        <button id="menu" aria-label="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" title="home">Home</a></li>
+            <li><a href="/chamber/discover.html" title="discover">Discover</a></li>
+            <li><a href="#" title="directory">Directory</a></li>
+            <li><a href="#" title="join"  class="active">Join</a></li>
+        </ul>
+    </nav>
+    <main id="joinBdy">
+        <section id="left">
+            <h3>Join the Rexburg Chamber of Commerce</h3>
+
+            <form method="get" action="thankyou.html">
+                <p>* Required Field</p>
+
+                <label class="req">First Name* <input type="text" name="fname" id="fname" required></label>
+                <label class="req">Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Title/Position <input type="text" name="title" id="title" pattern="[:alpha:]\ *?\-*?{,7}"></label>
+                <label class="req">Email Address* <input type="email" name="email" id="email" placeholder="randomperson@gmail.com" required></label>
+                <label class="req">Phone Number*<input type="tel" name="phone" id="phone" required></label>
+                <label class="req">Bussiness/Organization Name*<input type="text" name="orgname" id="orgname" required></label>
+                <p id="selectP">**Levels info below form</p>
+                <label>Membership Level 
+                    <select name="level" class="top">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="np">Non Profit (for non profit organizations, no fee)</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </label>
+                <label>Business/Organization Description <input type="text" name="description" id="description"></label>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                <input type="submit" value="Join" id="submitBtn">
+            </form>
+        </section>
+        <section id="right">
+        <div id="memberships">
+            <table id="compare">
+                <thead>
+                    <tr><th colspan="5" scope="colgroup">Membership Levels</th></tr>
+                    <tr>
+                        <th></th>
+                        <th>Non Profit</th>
+                        <th>Bronze</th>
+                        <th>Silver</th>
+                        <th>Gold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fee</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                    </tr>
+                    <tr>
+                        <td>Special Events</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                    </tr>
+                    <tr>
+                        <td>Training</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                    </tr>
+                    <tr>
+                        <td>Advertising</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                    </tr>
+                    <tr>
+                        <td>Event Discounts</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    </main>
+    <footer id="joinfooter">
+        <p>&copy;  Jenna Ray. |  Project for WDD230  |  Fall 2023</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/getDate.js"></script>
+</body>
+</html>
