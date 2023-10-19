@@ -101,7 +101,7 @@
         grid-column: 1/4;
         grid-row: 1/3;
         z-index: 0;
-        background-image: url("/chamber/images/hero2.png");
+        background-image: url("/chamber/images/hero2.webp");
         background-repeat: no-repeat;
         background-size: 100%;
         max-width: 100vw;
