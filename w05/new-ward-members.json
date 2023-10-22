@@ -1,0 +1,35 @@
+{
+    "familyName" : "Johnson",
+    "moveInDate" : 2022,
+    "numFamilyMembers" : 3,
+    "visitedByBishopric" : false,
+    "familyMembers" : [
+        {
+            "name" : "Josie",
+            "Gender" : "M",
+            "DOB" : {
+                "day" : 2,
+                "month" : 8,
+                "year" : 2000
+            }
+        },
+        {
+            "name" : "Margo",
+            "Gender" : "F",
+            "DOB" : {
+                "day" : 8,
+                "month" : 2,
+                "year" : 1965
+            }
+        },
+        {
+            "name" : "Ed",
+            "Gender" : "M",
+            "DOB" : {
+                "day" : 12,
+                "month" : 12,
+                "year" : 1970
+            }
+        }
+    ]
+}
