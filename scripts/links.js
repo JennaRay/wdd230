@@ -3,35 +3,26 @@ const linksURL = "https://jennaray.github.io/wdd230/data/links.json";
 const list = document.querySelector("#activities-list");
 
 async function getLinks(){
-    try {
         const response = await fetch(linksURL);
-        if (response.ok){
-            const response = await fetch(linksURL);
-            const data = await response.json();
-            console.log(data);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
+        const data = await response.json();
+        //console.log(data);
+        getLinks(data.weeks);
 
 }
 
 getLinks();
 
-// function displayLinks(data){
-//     foreach (item in data.weeks){
-//         let w = document.createElement("li");
-//         let name = document.createElement("p");
-//         name.textContent = `${item.week} ||`;
-//         w.append(name);
-
-//         foreach (link in item.links){
-//             let l = document.createElement("a");
-//             l.setAttribute("href", `${link.url}`);
-//             l.innerHTML = `${link.title}`;
-//             w.appendChild(l);
-//         };
-//     };
-// }
+const displayLinks = (weeks) =>
+{
+    weeks.foreach((week) => {
+        let line = document.createElement('li');
+        line.textContent = `${week.week} ||`;
+        week.links.foreach((link) => {
+            let entry = document.createElement('a');
+            entry.setAttribute("href", link.url);
+            entry.innerHTML = `${link.title}`;
+            line.appendChild(` ${entry} |`);
+        });
+        list.appendChild(line);
+    });
+}
