@@ -4,11 +4,17 @@ const list = document.querySelector("#activities-list");
 
 async function getLinks(){
     try {
-        
+        const response = await fetch(linksURL);
+        if (response.ok){
+            const response = await fetch(linksURL);
+            const data = await response.json();
+            console.log(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
     }
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    console.log(data);
 
 }
 
