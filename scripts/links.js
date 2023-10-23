@@ -5,9 +5,8 @@ const list = document.querySelector("#activities-list");
 async function getLinks(){
         const response = await fetch(linksURL);
         const data = await response.json();
-        //console.log(data);
-        getLinks(data.weeks);
-
+        console.log(data);
+        //getLinks(data.weeks[0]);
 }
 
 getLinks();
