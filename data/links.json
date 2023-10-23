@@ -1,0 +1,101 @@
+{
+    "weeks" : [
+        {
+        "week": "Week 1",
+        "links": [
+            {
+                "url":"week01/holygrail.html",
+                "title": "HG Layout"
+            },
+            {
+                "url":"week01/media-query.html",
+                "title":"mQueries"
+            },
+            {   
+                "url":"week01/chamber-site-plan.html",
+                "title":"Chamber Site Plan"
+            }
+        ]
+        },
+        {
+            "week":"Week 2",
+            "links": [
+                {
+                    "url":"week02/design.html",
+                    "title":"Design Activity"
+                },
+                {
+                    "url":"https://codepen.io/JennaRay/pen/bGOLrOY",
+                    "title":"Hamburger Menu Codepen"
+                },
+                {
+                    "url":"week02/bom.html",
+                    "title":"DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "week":"Week 3",
+            "links": [
+                {
+                    "url":"w03/images/landscape-small.webp",
+                    "title":"WebP",
+                },
+                {
+                    "url":"w03/lazyload.html",
+                    "title":"Lazy Loading"
+                },
+                {
+                    "url":"w03/responsive-images.html",
+                    "title":"Responsive Images"
+                },
+                {
+                    "url":"w03/bom.html",
+                    "title":"Local Storage"
+                }
+            ]
+        },
+        {
+            "week":"Week 4",
+            "links": [
+                {
+                    "url":"https://codepen.io/JennaRay/pen/vYvMKEe",
+                    "title":"Pseudo-Classes"
+                },
+                {
+                    "url":"w04/images/w3schoolstasks.png",
+                    "title":"Combinators"
+                },
+                {
+                    "url":"w04/tablebuild.html",
+                    "title":"Table"
+                },
+                {
+                    "url":"w04/form-start/form-start/index.html",
+                    "title":"Web Form"
+                }
+            ]
+        },
+        {
+            "week":"Week 5",
+            "links": [
+                {
+                    "url":"https://codepen.io/JennaRay/pen/oNmNPbX",
+                    "title":"Pseudo-Elements"
+                },
+                {
+                    "url":"w05/new-ward-members.json",
+                    "title":"JSON"
+                },
+                {
+                    "url":"w05/prophets.html",
+                    "title":"Fetch() Activity"
+                }
+                {
+                    "url":"w05/weather.html",
+                    "title":"API Test"
+                }
+            ]
+        }
+    ]
+}
