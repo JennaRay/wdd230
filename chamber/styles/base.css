@@ -647,7 +647,6 @@ select{
 }
 #directory #cards section ul {
     text-align: left;
-    float: center;
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: #d3c7b3;
