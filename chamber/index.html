@@ -27,7 +27,7 @@
     <nav>
         <button id="menu" aria-label="menu"></button>
         <ul class="navigation">
-            <li><a href="/chamber/index.html" title="home" class="active">Home</a></li>
+            <li><a href="index.html" title="home" class="active">Home</a></li>
             <li><a href="discover.html" title="discover">Discover</a></li>
             <li><a href="directory.html" title="directory">Directory</a></li>
             <li><a href="join.html" title="join">Join</a></li>
@@ -45,18 +45,62 @@
                 <button id="calltoaction">Join today</button>
             </div>
         </div>
+        <div id="banner">
+            <h3>Join us at the Chamber of Commerce Meet and Greet! </h3>
+            <p>  | Wednesday at 7:00 p.m. |</p>
+            <button id="bannerBtn">x</button>
+        </div>
         <div id="home-cards">
             <section id="events">
                 <h3>Upcoming Events</h3>
-                <p>words words words</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h4>lorem</h4> 
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+                <h4>lorem</h4><p>voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </section>
             <section id="weather">
-                <h3>Weather</h3>
-                <p>weather</p>
+                <h3>Rexburg ID</h3>
+                <img id="weather-icon">
+                <p id="current-temp"></p>
+                <p id="figcaption"></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3" scope="colgroup">3-Day Forecast</th>
+                        </tr>
+                        <tr>
+                            <th id="day1" scope="col"></th>
+                            <th id="day2" scope="col"></th>
+                            <th id="day3" scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img id="weather-icon1"></td>
+                            <td><img id="weather-icon2"></td>
+                            <td><img id="weather-icon3"></td>
+                        </tr>
+                        <tr>
+                            <td id="weather-info1"></td>
+                            <td id="weather-info2"></td>
+                            <td id="weather-info3"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
             <section id="spotlight">
                 <h3>Business Spotlight</h3>
-                <p> yep</p>
+                <section id="spot1">
+                    <img id="spot1-icon">
+                    <h2 id="spot1-name"></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
+                    </p>
+                </section>
+                <section id="spot2">
+                    <img id="spot2-icon">
+                    <h2 id="spot2-name"></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in v</p>
+                </section>
             </section>
         </div>
     </main>
@@ -66,5 +110,9 @@
     </footer>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/getDate.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/localStorage.js"></script>
 </body>
 </html>

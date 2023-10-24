@@ -1,3 +1,5 @@
+import 'C:\Users\jenna\OneDrive\Documents\wdd230\chamber\scripts\banner.js';
+
 const visitsDisplay = document.querySelector(".visits");
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 const todaysDate = new Date();
@@ -19,3 +21,6 @@ else {
 numVisits ++;
 localStorage.setItem("numVisits-ls", numVisits);
 localStorage.setItem("lastVisit-ls", Date.now());
+addEventListener("loadstart", function(){if (todaysDate.toLocaleString('default', {day:'numeric'}) in ["1", "2", "3"] && daysBetween > 1) {
+    displayBanner();
+} else { hideBanner();};});
