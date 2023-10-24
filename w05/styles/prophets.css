@@ -32,6 +32,7 @@ header, main, footer {
 #cards section {
     margin-top: 1rem;
     border: 1rem dotted darkmagenta;
+    text-align: center;
 }
 #cards section:nth-child(even) {
     border-color: greenyellow;

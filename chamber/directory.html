@@ -27,20 +27,29 @@
     <nav>
         <button id="menu" aria-label="menu"></button>
         <ul class="navigation">
-            <li><a href="/chamber/index.html" title="home" class="active">Home</a></li>
+            <li><a href="/chamber/index.html" title="home">Home</a></li>
             <li><a href="discover.html" title="discover">Discover</a></li>
-            <li><a href="#" title="directory">Directory</a></li>
+            <li><a href="#" title="directory" class="active">Directory</a></li>
             <li><a href="join.html" title="join">Join</a></li>
         </ul>
     </nav>
-    <main>
-        
+    <div id="display-modes">
+        <button id="grid" title="grid view">#</button>
+        <button id="column" title="column view">H</button>
+    </div>
+    <main id="directory">
+        <h2>Chamber Members</h2>
+        <div id="cards" class="grid">
+            
+        </div>
     </main>
-    <footer>
+    <footer id = #directory-footer>
         <p>&copy;  Jenna Ray. |  Project for WDD230  |  Fall 2023</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/getDate.js"></script>
+    <script src="scripts/directory.js"></script>
+    <!-- <script src="scripts/changeDisplay.js"></script> -->
 </body>
 </html>

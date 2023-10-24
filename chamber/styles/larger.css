@@ -23,7 +23,7 @@
         font-size: 70%;
         padding-left: 10px;
         }
-    #cards {
+    #home-cards {
         display: grid;
         grid-template-columns: 4fr 1fr;
         }
