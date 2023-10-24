@@ -29,7 +29,7 @@
             "address":"444 fourth st.",
             "phone":"444-444-4444",
             "websiteURL":"#",
-            "iconfile":"#",
+            "iconfile":"https://raw.githubusercontent.com/JennaRay/wdd230/main/chamber/images/fillerlogo.webp",
             "membershiplevel":"Gold"
         },
         {
@@ -37,7 +37,7 @@
             "address":"555 fifth st.",
             "phone":"555-555-5555",
             "websiteURL":"#",
-            "iconfile":"#",
+            "iconfile":"https://raw.githubusercontent.com/JennaRay/wdd230/main/chamber/images/fillerlogo.webp",
             "membershiplevel":"Gold"
         },
         {
@@ -45,7 +45,7 @@
             "address":"676 sixth st.",
             "phone":"676-676-6766",
             "websiteURL":"#",
-            "iconfile":"#",
+            "iconfile":"https://raw.githubusercontent.com/JennaRay/wdd230/main/chamber/images/fillerlogo.webp",
             "membershiplevel":"Gold"
         },
         {
@@ -53,7 +53,7 @@
             "address":"777 seventh st.",
             "phone":"777-777-7777",
             "websiteURL":"#",
-            "iconfile":"#",
+            "iconfile":"https://raw.githubusercontent.com/JennaRay/wdd230/main/chamber/images/fillerlogo.webp",
             "membershiplevel":"Gold"
         }
     ]

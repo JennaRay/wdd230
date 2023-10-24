@@ -19,8 +19,8 @@ const displayMembers = (members) => {
         let level = document.createElement('h3');
 
         busName.textContent = `${member.name}`;
-        contact.innerHTML = `<li>${member.phone}</li><li>${member.address}</li><li><a href=${member.websiteURL}>Visit Site</a></li>`;
-        level.textContent = `${member.level}`;
+        contact.innerHTML = `<li>phone: ${member.phone}</li><li>address: ${member.address}</li><li><a href=${member.websiteURL}>visit site</a></li>`;
+        level.innerHTML = `${member.membershiplevel} </br> member`;
 
         icon.setAttribute('src', member.iconfile);
         icon.setAttribute('alt', "Business Icon");
