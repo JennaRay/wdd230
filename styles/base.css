@@ -207,6 +207,10 @@ h3 {
     width: 80%;
     list-style-type: none;
 }
+#activities-list {
+    list-style-type: none;
+    padding-right: 1rem;
+}
 #activities a {
     color: #c2e781;
 }
