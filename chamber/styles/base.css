@@ -390,7 +390,21 @@ footer {
     left: 0;
     font-size: 70%;
     padding-left: 10px;
+    display: flex;
     }
+footer ul {
+    float: left;
+}
+footer p {float: right;
+margin-top: 3rem;
+position: absolute;
+right: 0;
+margin-right: 1rem;}
+footer p:first-of-type {
+    margin-bottom: 1rem;
+}
+
+
 #home-cards {
     width: 80%;
     height: fit-content;
