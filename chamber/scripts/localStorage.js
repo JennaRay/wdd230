@@ -1,4 +1,4 @@
-import 'C:\Users\jenna\OneDrive\Documents\wdd230\chamber\scripts\banner.js';
+const { banner } = require('banner.js');
 
 const visitsDisplay = document.querySelector(".visits");
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
