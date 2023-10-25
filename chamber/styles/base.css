@@ -78,8 +78,7 @@ main {
     flex-direction: column;
 }
 #weather {
-text-align: center;
-padding: auto;}
+text-align: center;}
 #weather table {
     border-collapse: collapse;
     margin: auto;
