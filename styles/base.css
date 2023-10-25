@@ -1,6 +1,6 @@
 :root {
     --bg: #394e4b;
-    --darker-bg: #233635;
+    --darker-bg: #152020;
     --text:#b7e0e0;
     --accent1: #93caca;
     --display: 'Oswald', monospace;
@@ -96,7 +96,7 @@ main {
     font-weight: 700;
     font-size: 1rem;
     font-family: "Oswald", monospace;
-    color: rgb(24, 71, 63);
+    color: rgb(0, 3, 3);
 }
 #hero-label:hover {
     box-shadow: -10px 10px 20px var(--darker-bg);
